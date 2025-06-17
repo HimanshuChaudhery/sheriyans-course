@@ -1,0 +1,16 @@
+{
+	"nodes":[
+		{"id":"30d1cdaae01b784b","x":-210,"y":2880,"width":670,"height":300,"type":"group","label":"Cards"},
+		{"id":"a1707013677862f6","type":"link","url":"https://www.youtube.com/watch?v=gafuqdKwD_U","x":440,"y":2380,"width":640,"height":360,"color":"1"},
+		{"id":"15dbdc20cdda86eb","type":"text","text":"# Central Ideas","x":60,"y":2500,"width":240,"height":80},
+		{"id":"8f1aca84e7aea1a3","type":"file","file":"2025/My First Note.md","x":-460,"y":2520,"width":400,"height":120,"color":"3"},
+		{"id":"a6b7f50e32239ba8","type":"text","text":"Here a card","x":0,"y":2900,"width":250,"height":64},
+		{"id":"59d55b3cbd04fd01","type":"text","text":"Titile Card","x":0,"y":3080,"width":250,"height":60},
+		{"id":"018242dcf0735a50","type":"text","text":"Here's another Card","x":0,"y":3000,"width":250,"height":60}
+	],
+	"edges":[
+		{"id":"da8fa9e7bcd0fb10","fromNode":"8f1aca84e7aea1a3","fromSide":"right","toNode":"15dbdc20cdda86eb","toSide":"left"},
+		{"id":"8148eb2c45f993fa","fromNode":"a1707013677862f6","fromSide":"left","toNode":"15dbdc20cdda86eb","toSide":"right"},
+		{"id":"bf013024a462a2dd","fromNode":"30d1cdaae01b784b","fromSide":"top","toNode":"15dbdc20cdda86eb","toSide":"bottom"}
+	]
+}
