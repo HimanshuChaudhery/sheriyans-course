@@ -5,7 +5,7 @@ The set of rules that need to be followed to surf on an internet and different d
 **Ques: Why we needed it in first place Internet Protocols ?**
 **Ans:** Every different company would like to have there own version of internet, but that could have been problematic, and that's why the communities like Internet Engineering Task Force (IETF) decided not to have this type of internet but a common and universal standard which need to follow.
 
-![img](Pasted image 20250617113527.png)
+![img](IP.png)
 
 **Ques: Where TCP(Transfer Control Protocol) is followed ?**
 **Ans:** In TCP, message send by the user gets an acknowledgement by the receiver. Until this process, no any other transfer of message is possible. 
@@ -22,7 +22,7 @@ TCP does not followed in those areas where Realtime Communication is needed like
 1. **SYN:** Client sends a request to start communication.
 2. **SYN-ACK:** Server acknowledges and responds.
 3. **ACK:** Client confirms, and data transfer begins.
-![3_way_handshake](Pasted image 20250617115224.png)
+![3_way_handshake](3WH.png)
 ![TCP](TCP-gif.gif)
 
 ### **Note:** Type protocol that need to be followed is decided by both Browser and Server.
