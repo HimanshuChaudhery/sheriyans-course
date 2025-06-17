@@ -5,7 +5,7 @@ The set of rules that need to be followed to surf on an internet and different d
 **Ques: Why we needed it in first place Internet Protocols ?**
 **Ans:** Every different company would like to have there own version of internet, but that could have been problematic, and that's why the communities like Internet Engineering Task Force (IETF) decided not to have this type of internet but a common and universal standard which need to follow.
 
-![[Pasted image 20250617113527.png]]
+![img](Pasted image 20250617113527.png)
 
 **Ques: Where TCP(Transfer Control Protocol) is followed ?**
 **Ans:** In TCP, message send by the user gets an acknowledgement by the receiver. Until this process, no any other transfer of message is possible. 
@@ -22,8 +22,8 @@ TCP does not followed in those areas where Realtime Communication is needed like
 1. **SYN:** Client sends a request to start communication.
 2. **SYN-ACK:** Server acknowledges and responds.
 3. **ACK:** Client confirms, and data transfer begins.
-![[Pasted image 20250617115224.png]]
-![[TCP-gif.gif]]
+![3_way_handshake](Pasted image 20250617115224.png)
+![TCP](TCP-gif.gif)
 
 ### **Note:** Type protocol that need to be followed is decided by both Browser and Server.
 
@@ -33,7 +33,7 @@ TCP does not followed in those areas where Realtime Communication is needed like
 - It's a connectionless protocol, meaning it doesn't establish a dedicated connection before sending data, making it faster but less reliable than its counterpart, TCP.
 - Used in Video calls, Gaming, live streaming, where speed is more important than reliability.
 
-![[UDP-gif.gif]]
+![UDP](UDP-gif.gif)
 
 ### **Note :** Many think UDP is always unreliable, but modern application use **FEC(Forward Error Correction)** to improve reliability.
 
@@ -51,7 +51,7 @@ TCP does not followed in those areas where Realtime Communication is needed like
 - HTTP or Hyper Text Transfer Protocol is a foundational protocol for communication on the World Wide Web. 
 - It enables the transfer of data, such as HTML pages, images, and videos, between web clients (like browsers) and servers. 
 - HTTP operates on a request-response model, where clients send requests to servers, and servers respond with the requested information.
-![[HTTP-.gif]]
+![HTTP](HTTP-.gif)
 
 ## HTTP Versions:
 - **HTTP/1.1:** Persistent connections, pipelining.
@@ -66,7 +66,7 @@ HTTPS stands for HyperText Transfer Protocol Secure. It is the most common proto
 - **HTTPS = HTTP + SSL/TLS encryption.**
 - Ensures **data privacy and prevents attacks** (MITM, sniffing).
 
-![[HTTPS-gif.gif]]
+![HTTPS](HTTPS-gif.gif)
 
 ### Common Myth:
 - **"HTTPS makes a site 100% secure"**.
