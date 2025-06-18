@@ -1,0 +1,91 @@
+/* Universal selector */
+*{
+    background-color: blueviolet;
+}
+
+/* Element selector */
+h1{
+    color: yellow;
+}
+
+p{
+    background-color: aquamarine;
+}
+
+/* Class selector */
+.chah{
+    color: whitesmoke;
+    background-color: black;
+}
+
+.exm{
+    color: aqua;
+}
+
+/* Id Selector */
+#idexm{
+    font-size: 10px;
+    color:bisque;
+    background-color: blue;
+    font-size: 20px;
+}
+
+/* Attribute selector */
+input[type="text"]{
+    color:red;
+}
+
+/* FONT STYLING PROPERTIES */
+h3{
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    line-height: 2;
+    letter-spacing: 20px;
+    word-spacing: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: line-through;
+    text-shadow: 3px 3px 10px black 
+    /* text-shadow: x y blur color */
+}
+
+/* CSS Color */
+.coloring{
+    background-color: rgb(0, 90, 170);
+
+}
+
+/* Box Properties and layout*/
+#card{
+    padding: 20px; /* space between content and border */
+    margin: 20px; /* Space between border and  */
+    border: 1px solid black;
+    height: 200px;
+    background-color: aquamarine;
+    
+    box-sizing: content-box; 
+    /* 
+    By default content-box is selected for box-sizing which leads to change in container size when padding is given which is wrong 
+    We can fix this problem by using border-box which does not change the size of container when padding is given. 
+    Because of border-box, Padding has to adjust according to the container size.
+    */
+    
+}
+
+.bg{
+    width: 300px;
+    height: 150px;
+    background-image: url(https://www.reliancegeneral.co.in/siteassets/rgiclassets/images/blogs-images/top-5-fastest-cars-in-the-world2.webp);
+    background-size: cover;
+    background-position: bottom;
+}
+
+.bg1{
+
+    width: 400px;
+    height: 250px;
+    background: linear-gradient(to right, red, yellow, cyan, purple);
+    /* By default it will start from top left */
+    box-shadow: 10px 20px 50px black;
+
+}
