@@ -1,0 +1,181 @@
+<!DOCTYPE html> <!-- This line indicates that we are using HTML version 5 -->
+<!-- DOCTYPE is not a tag it's actually an instruction. -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook | Login and sign up</title>
+</head>
+<body>
+    <h1>Facebook</h1>
+    <h2>Heading 2</h2>
+    <H3>Heading 3</H3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+
+    <!-- Paragraph tag for writing paragraph-->
+    <p>Lorem ipsum <b>dolor</b> sit amet <i>consectetur</i> adipisicing elit. Dolorum iure consequuntur quae?</p>
+
+    <!-- Subscript tag-->
+    <p>2<sup>2</sup> = 4</p>
+
+    <!-- <br> break tag also known as empty tag. It is used for provide line break or moving to new paragraph. -->
+    <p>Hello, My name is Raj.<br> I am a superhero</p>
+
+    <!-- <hr> tag is used to provide horizontal line between paragraphs and elements.-->
+    <p>This car is Porche Rs 911.</p>
+    <hr>
+    <hr>
+    <hr>
+    <p>This car is ford mustang.</p>
+
+    <!-- List containers are of two types  -->
+    <!-- 
+    1. Ordered list <ol>
+    2. Unordered list <ul>
+    -->
+    <p><b>Example of Ordered List</b></p>
+    <ol>
+        <li>Apple</li>
+        <li>Meta</li>
+        <li>Netflix</li>
+        <li>Amazon</li>
+        <li>Google</li>
+    </ol>
+
+    <p><b>Example of Unordered List</b></p>
+    <ul>
+        <li>TCS</li>
+        <li>Infosys</li>
+        <li>Deloitte</li>
+        <li>Cognizant</li>
+        <li>Intuit</li>
+    </ul>
+
+    <!-- <a> Ancher tag is used for hyperlink -->
+    <a href="https://www.google.com/">
+        Open Google.
+    </a>
+    <br>
+    <br>
+
+    <!-- Image tag is used to insert image in your website. -->
+    <img src="https://static.writearn.in/1682146385413_coolest-cars-feature_jpg.jpg" 
+    alt ="a decent image" width="50%">
+
+    <!-- Let's see Code tag and pre tag -->
+    <!-- Pre tag: it allows us to write the statement asit is writeen in source code. -->
+    <pre>
+        Hi, my name is Damian
+        Hola amigos
+    </pre>
+
+    <!-- Code tag: It is used to written messgae in console font or code format -->
+     <code>printf("Hello World!")</code>
+    <br>
+    <hr>
+    <hr>
+
+    <!-- AUDIO & VIDEO TAG -->
+
+    <audio src="https://actions.google.com/sounds/v1/transportation/engine_revving_in_parking_garage.ogg"
+        controls
+    >
+    </audio>
+    <br>
+    <video controls width="50%" src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4">
+
+    </video>
+    <!-- 
+    NOTES:-
+        Autoplay in video tag doesn't work if video is not muted.
+    
+    -->
+    <br>
+
+    <!-- Attribute: target is used for opening link in same webpage, new tab or new window.-->
+    <a href="https://www.facebook.com" target="_blank"> Click here open in new window</a>
+
+    <br><br>
+    <hr>
+    <hr>
+    <hr>
+
+    <!-- This technique where we use "id" indication in anchor tag to jump in particular section of webpage is called jumping to a section -->
+    <a href="#a">a elements</a>
+    <a href="#b">b elements</a>
+
+    <!-- Div is a block level element means it will cover whole width-->
+     <div id="a">
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum ratione nulla officia qui eum? Veritatis ab nostrum quaerat voluptatem atque nihil cum illum maiores iure, ut facere saepe fugit molestias ducimus molestiae repellendus maxime neque tempore esse repellat. Recusandae nobis pariatur praesentium commodi maiores fugit minima, eius obcaecati aperiam, expedita corporis necessitatibus. Tenetur explicabo nesciunt consectetur sit assumenda facilis aliquid soluta maiores hic recusandae culpa dolores quam corrupti facere ea veniam modi repudiandae sequi, provident nostrum ad? Totam, excepturi velit!
+        </p>
+     </div>
+     <div id="b">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, quisquam reprehenderit, debitis libero, reiciendis non cum nam fugit aliquid fuga similique saepe vero. Soluta, cumque! Amet laborum reiciendis nam ullam ex doloribus consequatur delectus repellendus consectetur, saepe atque culpa asperiores. Deleniti, rerum ut? Omnis unde dolorem consequatur hic nulla voluptatibus similique sit est quis dignissimos, aliquam possimus distinctio sunt esse sint nihil accusantium aperiam. Culpa hic libero quos vel, cumque nam dignissimos impedit, cum consectetur quo consequatur ullam quaerat! Sed, ad sint molestias porro suscipit temporibus ipsum ipsa alias molestiae?
+        </p>
+     </div>
+    <br>
+
+    <!-- Linking pages to each other -->
+     <a href="about.html"> About a HTML</a>
+    
+     <br>
+     <hr>
+     <hr>
+
+    <!-- SEMANTIC TAGS -->
+     <!-- 
+     Header, Footer, main, aside, article, nav etc
+     These tags are used to improve SEO(crucial) of a website. So it can be listed in search engine easily  
+     -->
+
+    <hr>
+    <hr>
+
+    <!-- BLOCK LEVEL ELEMENT AND INLINE ELEMENT -->
+
+    <!-- Example of block level element -->
+    <p>Apple</p>
+    <p>Apple</p>
+    <p>Apple</p>
+    <p>Apple</p>
+
+    <!-- Example of Inline element  -->
+    <span>Linux</span>
+    <span>Linux</span>
+    <span>Linux</span>
+    <span>Linux</span>
+
+    <!-- HTML Symbols -->
+     <p>HTML Symbols: &copy; &reg; &hearts; &half;</p>
+
+    <hr>
+    <hr>
+
+    <!-- HTML Form -->
+    <form>
+        <label for="name">Name: </label>
+        <input type="text" id="name" placeholder="Enter your name">
+        <br><br>
+        <label for="email">Email: </label>
+        <input type="email" id="email" placeholder="Enter your email">
+        <br><br>
+        <label for="pass">Password</label>
+        <input type="password" id="pass" placeholder="Enter your password">
+        <br><br>
+        male: <input type="radio" name="gen">
+        female: <input type="radio" name="gen">
+        others: <input type="radio" name="gen">
+        <br><br>
+        <input type="date">
+        <br><br>
+
+        <!-- code to take only images as a file -->
+        <input type="file" accept="image/*">
+    </form>
+
+</body>
+</html>
