@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: #111;
+    color: #fff;
+}
+
+#box{
+    height: 200px;
+    width: 200px;
+    /* background-color: crimson; */
+    /* linear gradient */
+    background: linear-gradient(to right bottom, red, blue);
+}
+
+#box2{
+    height: 200px;
+    width: 200px;
+    background: radial-gradient(red,yellow);
+    border-radius: 50%;
+}
+
+#box3{
+    height: 200px;
+    width: 200px;
+    background-image: url(https://preview.redd.it/whose-the-biggest-aura-farmers-in-in-all-of-dragon-ball-v0-f6cwz1ci5yre1.jpeg?auto=webp&s=38799bc215a4d77e75eb4c3d4415fc7e2f5bbc6b);
+    border-radius: 50%;
+    background-size:cover;
+    background-position: center;
+}
+
+#box4{
+    /* Percentage depends upon which is our parents */
+    height: 50%;
+    width: 70%;
+    background-color: blanchedalmond;
+}
+
+
+/* POSTION PROPERTIES */
+#car1{
+    height: 300px;
+    width: 300px;
+    background-color: crimson;
+    margin-top: 40px;
+    position:absolute; 
+    top: 50%;
+    right: 50%;
+    z-index: 10; /* Which ever has more Z-index will be above than others */
+}
+
+#car2{
+    height: 300px;
+    width: 300px;
+    background-color: lightseagreen;
+    position:absolute;
+    top: 40%;
+    right: 40%;
+    z-index: 12;
+}
+
+#car3{
+    height: 300px;
+    width: 300px;
+    background-color: lightblue;
+    position:absolute;
+    top: 30%;
+    right: 30%;
+}
+
+/* 
+    In transform: `Translate(-50%,-50%)` it will minus the 50% of the given position means if position is 40 then -50% of 40 will be 20.  
+*/
+
+#parent1{
+    height: 400px;
+    width: 400px;
+    background-color: crimson;
+    position: relative; 
+    /* Relative allows the parent to control on child means child will move according to parent */
+}
+
+#child1{
+    height: 200px;
+    width: 200px;
+    background-color: lightseagreen;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+} 
+
+/* MOST IMPORTANT : FLEX (divides the layout into rows and columns)*/
+
+#parent2{
+    height: 100%;
+    width: 100%;
+    background-color: #000067;
+    display: flex;
+    align-items: center; /* It will align the item according to vertically(cross-axis) */
+    justify-content: center; /* It will align the item according to horizontally(Main-axis)*/
+    flex-direction: column; /* It's default value will be row */
+}
+
+#child21{
+    width: 200px;
+    height: 200px;
+    background-color: crimson;
+}
+
+#child22{
+    width: 200px;
+    height: 200px;
+    background-color: blueviolet;
+}
+
+#child23{
+    width: 200px;
+    height: 200px;
+    background-color: green;
+}
+
+#child24{
+    width: 200px;
+    height: 200px;
+    background-color: lightblue;
+}
+
+#bg{
+    width: 100%;
+    height: 200%;
+    background-image: url(https://images.saatchiart.com/saatchi/2199861/art/10341725/9404341-JUYLYEKQ-7.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
