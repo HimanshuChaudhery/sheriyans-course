@@ -1,0 +1,141 @@
+/* Applying Pseudo Classes & Pseudo-Elements */
+/* Change the color when curser hover oven an element */
+button:hover{
+    color: red;
+}
+
+/* Provide style when focused or being used */
+input:focus{
+    color: green;
+}
+
+/* If we use "::before", "::after" then we must use "content" and we must have to right something inside it */
+
+/* Add content before an element */
+h3::before{
+    content: "🔥";
+    color: orange;
+}
+
+li::before{
+    content: "👵";
+}
+
+/* Add content after an element */
+h3::after{
+    content: "🤑";
+}
+
+li::after{
+    content: "💷";
+}
+
+
+/* -------------------------------------------------------------------- */
+
+/* Learning CSS Transitions */
+#btn1 {
+    background-color: crimson;
+    color: white;
+    transition: all ease-in 0.3s; /* linear, ease-in, ease-out, ease-in-out, cubic-bezier() */
+    /*
+    transition: how_many_elements(mostly all) type_of_transition duration;
+    */
+}
+
+#btn1:hover{
+    background-color: greenyellow;
+    color:black;
+}
+
+/* --------------------------------------------------------------------- */
+
+/* Learning about CSS transform */
+/* 
+    We can do 4 things with the help of transform:
+        1.translate(x,y): We can move our element.
+        2.rotate(10deg): We can roate our element.
+        3.scale(1): We can zoom in(Enlarge) or zoom out(shink) our element (default will be 1).
+        4.skew(x,y): Skews the element means you tilt the element.
+*/
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    /* transform: translate(100px, 100px); */
+    transition: all ease-in-out .2s;
+}
+
+.box:hover{
+    /* transform: scale(.6); */
+    transform: skew(20deg, 0);
+}
+
+/* Working with 3D transform */
+
+/* 
+    We can do 4 things with 3D transform :-
+        1. translate3d(x,y,z): We can move element in 3D space.
+        2. scale3d(x,y,z): We can enlarge and shrink our element in 3D.
+        3. rotate3d(x,y,z,angle): Rotates around a 3D axis.
+        4. perspective(value): Creates a depth effect. 
+*/
+
+body{
+    perspective: 700px;
+}
+
+.cube{
+    width: 200px;
+    height: 200px;
+    background-color: lightsalmon;
+    transform: translate3d(10px, 20px,-900px);
+    /* 
+        translate3d has 3 values x-axis, y-axis and z-axis but z-axis will not going to work until we use prospective property in our parent element. 
+    */
+}
+/* ------------------------------------------------------------------------------ */
+
+/* UNDERSTANDING CSS ANIMATION(Awesome) */
+
+.anime{
+    width: 300px;
+    height: 300px;
+    background-color: brown;
+    animation: move 2s ease-in-out 2s 10 both;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+}
+
+@keyframes move {
+
+    /* 
+    Different ways of creating CSS animation
+        1.from{} to{}
+        
+        2. 0%{} 10%{} 20%{}
+    */
+
+    /* from{
+        background-color: brown;
+    }
+    to{
+        background-color: green;
+    } */
+
+    0%{
+        background-color: brown;
+    }
+
+    25%{
+        background-color: green;
+    }
+
+    75%{
+        background-color: yellow;
+    }
+
+    100%{
+        background-color: brown;
+    }
+
+}
