@@ -1,0 +1,128 @@
+*{
+    padding: 0;
+    margin :0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.container{
+    border: 2px solid crimson;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form_container{
+    border: 2px solid black;
+    width: 500px;
+    height: 580px;
+    border-radius: 10px;
+    transition: 0.4s;
+}
+
+.form_container:hover{
+    box-shadow:  20px 20px black;
+    transform: translate(-20px, -20px);
+}
+
+
+#form{
+    margin: 30px 40px;
+    perspective: 700px;
+}
+
+.heading{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    animation: move 2s infinite;
+    transform: translate3d();
+}
+
+
+label{
+    font-size: 20px;
+}
+
+label::after{
+    content: " 😆";
+}
+
+
+input{
+    border-color: #737373;
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+    padding-left: 15px;
+    font-size: 17px;
+    border-radius: 4px;
+}
+
+input:focus{
+    color: brown;
+}
+
+textarea{
+    border-radius: 10px;
+    width: 100%;
+    height: 160px;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-left: 15px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+textarea:focus{
+    color:green;
+
+}
+
+#btn{
+    border-color: #0000;
+    border-radius: 10px;
+    text-decoration: none;
+    width: 100%;
+    height: 60px;
+    background-color: rgb(0, 130, 251);
+    color: white;
+    font-size: 22px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#btn:hover{
+    background-color: rgb(193, 39, 4);
+    animation: move 2s infinite;
+}
+
+@keyframes move{
+    0%{
+        scale: 1.0;
+    }
+
+    50%{
+        scale: 1.1;
+    }
+
+    100%{
+        scale: 1.0;
+    }
+}
+
+@keyframes spins{
+    from{
+        tarnsform: rotate(0deg);
+    }
+
+    to{
+        transform: rotate(360deg);
+    }
+}
