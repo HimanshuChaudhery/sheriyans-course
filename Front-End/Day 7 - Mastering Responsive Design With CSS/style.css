@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+.parent{
+    height: 400px; /* Pixel is a fixed unit */
+    width: 100%;
+    background-color: wheat;
+}
+
+.child{
+    height: 100px;
+    width: 50%;
+    background-color: crimson;
+}
