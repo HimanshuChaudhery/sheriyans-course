@@ -9,6 +9,12 @@ html, body{
     height: 100%;
 }
 
+html{
+    font-size: 50px; 
+    /* By Default the font size of HTML is 16px */
+}
+
+/* % percentage unit */
 .parent{
     height: 400px; /* Pixel is a fixed unit */
     width: 100%;
@@ -17,6 +23,30 @@ html, body{
 
 .child{
     height: 100px;
-    width: 50%;
+    width: 50%; /* Responsive design */
     background-color: crimson;
+}
+
+/* rem unit is used for font. When we want to make font responsive */
+h1{
+    font-size: 2rem;
+    /* rem depends on the font size of HTML(root element) */
+}
+/* 1rem = 16px */
+
+
+/* em unit depends on the parent size in this case size of h1 depends of the size of its parent that is (child1) */
+.child1{
+    font-size: 50px;
+}
+
+h1{
+    font-size: 2em;
+}
+
+/* Viewport Height and Width*/
+.parent2{
+    width: 100vw;
+    height: 100vh;
+    background-color: wheat;
 }
