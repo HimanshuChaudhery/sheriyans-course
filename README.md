@@ -1,1 +1,1 @@
-# sheriyans-course
+# sheriyans-course 🎯
