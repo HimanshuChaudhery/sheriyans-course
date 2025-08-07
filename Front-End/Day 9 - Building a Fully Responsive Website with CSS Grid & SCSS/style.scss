@@ -37,12 +37,58 @@ section{
     p{
         color: wheat;
         text-align: center;
-        font-size: 1.2 rem;
+        font-size: 1.2rem;
         line-height: 1.6; /* To control height between sentences and line*/
         margin: 0.9rem 0;
         opacity: 0.6;
+        // <br> will be no use even if it's present
+        br{
+            display: none;
+        }
     }
 }
 
+// When minimum width is greater than equal to 1020px then our website layout will switch to desktop
+@media (min-width:1020px){
 
+    // rem is a relative unit which relates to HTML element font size
+    // 100vw(viewport width) = default width of website(in my case 1920px) 
+
+    // 1rem = 16px(by default)
+
+    // Now if we want to ake our website truly responsive and accessible for all screen(from mobile view to 4k) in that case we will use clamp().
+    html{
+        font-size: clamp(16px, 1vw, 20px);
+        // clamp() takes 3 parameters : min_value, default_value, max_value
+
+        /* Example:-
+            100vw = 2400px
+            10vw = 240px
+            1vw = 24px
+        */
+    }
+
+    // Terminology: Fuild Typography :-
+    // When website font change's with its screen size fluently.
+
+    section{
+        img{
+            width: 28%;
+        }
+
+        h1{
+            font-size: 8.5rem;
+        }
+
+        p{
+            font-size: 1.5rem;
+            font-weight: 100;
+
+            br{
+                display: block;
+                // This will enable <br> tag as block level element
+            }
+        }
+    }
+}
 

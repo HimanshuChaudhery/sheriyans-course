@@ -36,8 +36,35 @@ section h1 {
 section p {
   color: wheat;
   text-align: center;
-  font-size: 1.2 rem;
+  font-size: 1.2rem;
   line-height: 1.6; /* To control height between sentences and line*/
   margin: 0.9rem 0;
   opacity: 0.6;
+}
+section p br {
+  display: none;
+}
+
+@media (min-width: 1020px) {
+  html {
+    font-size: clamp(16px, 1vw, 20px);
+    /* Example:-
+        100vw = 2400px
+        10vw = 240px
+        1vw = 24px
+    */
+  }
+  section img {
+    width: 28%;
+  }
+  section h1 {
+    font-size: 8.5rem;
+  }
+  section p {
+    font-size: 1.5rem;
+    font-weight: 100;
+  }
+  section p br {
+    display: block;
+  }
 }/*# sourceMappingURL=style.css.map */
