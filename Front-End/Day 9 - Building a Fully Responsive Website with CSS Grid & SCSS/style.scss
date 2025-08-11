@@ -51,14 +51,37 @@ main{
 
 .view-2{
     width: 100%;
-    padding: 4rem 5rem;
+    padding: 4rem 3rem;
     display: flex;
     justify-content: center;
 
     .marquee{
         display: flex;
-        width: 40%;
+        width: 100%;
         overflow: hidden;
+        position: relative;
+
+        &::after{
+            content: "";
+            height: 100%;
+            width: 30%;
+            background-image: linear-gradient(to right, #0e0e0e, transparent);
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        &::before{
+            content: "";
+            height: 100%;
+            width: 30%;
+            background-image: linear-gradient(to left, #0e0e0e, transparent);
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: 1;
+        }
+
 
         .text{
             display: flex;
@@ -129,6 +152,12 @@ main{
                 display: block;
                 // This will enable <br> tag as block level element
             }
+        }
+    }
+
+    .view-2{
+        .marquee{
+            width: 50%;
         }
     }
 }
