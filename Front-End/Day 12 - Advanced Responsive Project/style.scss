@@ -1,0 +1,66 @@
+// SCSS is a preprocessor
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+html{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
+    padding: 1rem;
+}
+
+main{
+    padding: 1rem; // 16 pixel but responsive
+    padding-top: 3rem;
+    border: 2px solid black; 
+    width: 100%;
+}
+
+.view-1{
+    width: 100%;
+    // border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    p{
+        font-weight: 200;
+        opacity: 0.8;
+    }
+
+    h1{
+        font-weight: 200;
+        font-size: 3.8rem;
+        font-weight: 400;
+        width: 70%;
+    }
+
+    img{
+        width: 100%;
+        object-fit: cover;
+        border-radius: 16px;
+    }
+}
+
+
+// MEDIA QUERY
+@media (min-width: 1020px){
+    main{
+        padding: 3rem;
+    }
+
+    .view-1{
+        h1{
+            font-size: 7rem;
+            width: 100%;
+        }
+    }
+}
