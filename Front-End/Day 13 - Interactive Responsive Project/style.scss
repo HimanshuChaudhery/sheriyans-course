@@ -19,6 +19,11 @@ main{
 }
 
 .view-1{
+
+    // background-image: url("/images/World_Map_Grayscale.png");
+    // background-repeat: no-repeat;
+    // background-size: cover;
+
     padding-top: 5rem;
     display: flex;
     flex-direction: column;
@@ -77,16 +82,69 @@ main{
 
             .img-b{
                 grid-area: b;
-                max-height: 11rem;
+                // max-height: 11rem; Don't use max-width that much What a headache
+                aspect-ratio: 4/3;
             }
 
             .img-c{
                 grid-area: c;
-                max-height: 8rem;
+                // max-height: 8rem;
+                aspect-ratio: 16/9;
             }
 
         }
 
     }
 
+}
+
+// STUDY CLAMP() and FIGURE OUT 
+
+// avoid height if you can 
+
+@media (min-width: 1020px){
+
+    main{
+        padding: 2rem;
+    }
+
+
+    .view-1{
+        background-image: url("/images/World_Map_Grayscale.png");
+        background-repeat: no-repeat;
+        background-size: 60%;
+        background-position: right;
+
+
+        flex-direction: row;
+
+        .top{
+            width: 60%;
+            // border: 1px solid black;
+            h1{
+                font-size: 6rem;
+            }
+            p{
+                font-size: 1rem;
+            }
+        }
+
+        .bottom{
+
+            width: 40%;
+            max-height: 30rem;
+            .images{
+                grid-template-areas: 
+                ". . b b"
+                "a a b b"
+                "a a b b"
+                "a a b b"
+                "a a b b"
+                "a a c c"
+                "a a c c"
+                ". . c c"
+                ;
+            }
+        }
+    }
 }

@@ -59,9 +59,38 @@ main {
 }
 .view-1 .bottom .images .img-b {
   grid-area: b;
-  max-height: 11rem;
+  aspect-ratio: 4/3;
 }
 .view-1 .bottom .images .img-c {
   grid-area: c;
-  max-height: 8rem;
+  aspect-ratio: 16/9;
+}
+
+@media (min-width: 1020px) {
+  main {
+    padding: 2rem;
+  }
+  .view-1 {
+    background-image: url("/images/World_Map_Grayscale.png");
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: right;
+    flex-direction: row;
+  }
+  .view-1 .top {
+    width: 60%;
+  }
+  .view-1 .top h1 {
+    font-size: 6rem;
+  }
+  .view-1 .top p {
+    font-size: 1rem;
+  }
+  .view-1 .bottom {
+    width: 40%;
+    max-height: 30rem;
+  }
+  .view-1 .bottom .images {
+    grid-template-areas: ". . b b" "a a b b" "a a b b" "a a b b" "a a b b" "a a c c" "a a c c" ". . c c";
+  }
 }/*# sourceMappingURL=style.css.map */
