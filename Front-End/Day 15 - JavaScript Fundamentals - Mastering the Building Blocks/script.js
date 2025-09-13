@@ -40,5 +40,70 @@
 // console.log(num1Real+num2Real);
 
 
-// HOISTING: 
-Continue from 36:19
+// HOISTING: Hoisting is a concept or behavior in JavaScript where the declaration of a function, variable, or class goes to the top of the scope they were defined in.
+// console.log(exp);
+
+// var exp = 10;
+
+// console.log(exp);
+
+// Conditional Statement
+
+if(10>=5){
+    console.log("Yes");
+}
+else{
+    console.log("No");
+}
+
+/* 
+    Q1. Ask a user his age and check if he is adult or not
+*/
+
+// var age = Number(prompt("Enter your age: "));
+// if(age>=18){
+//     console.log("You are eligible to vote");
+// }
+// else{
+//     console.log("You are not eligible to vote");
+// }
+
+/*
+    Q2. Ask user his/her percentage and report them their GRADE
+*/
+
+var pert = Number(prompt("Enter your percentage"));
+if(pert>=90){
+    console.log("You got A+ grade");
+}
+
+else if(pert>=80){
+    console.log("You got B+ grade");
+}
+
+else if(pert>=60){
+    console.log("You got C+ grade");
+}
+
+else{
+    console.log("You FAILED");
+}
+
+/* 
+    BINARY OPERATOR
+    true - 1
+    false - 0
+        &&(AND)
+        ||(OR)
+
+*/
+// Example
+var ag = 10;
+
+if(ag>18 && ag<60){
+    console.log("You can drive");
+}
+else{
+    console.log("You cannot drive");
+}
+
