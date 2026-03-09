@@ -49,6 +49,74 @@ hofs2(function() // Passing function() as parameter
 
 //<-------------------------------------------------------------------------->
 
+// CAll BACK Function
+// A Function that passes another function as a parameter during function call is called Call-Back Function
+
+function call_back(val){
+    // If function accepts the another function as a paramter then it is Higher Order Function 
+}
+
+call_back(function(){
+    // This is a Call-Back function
+})
+/* 
+    FOR MORE UNDERSTANDING :
+    A function that passes another function as a parameter during function call is called Callback function.
+    A function that accepting the another function as a during function execution is called Hight order function. 
+
+*/
+
+// First Class function (It's a property of JS) :  first class function ek darja(Status, Position) hai jo ki JS mien functions ko milla hai, is darje mein kaha jatta hai ki function ko hum value ki tarah use kr sakte hai
+
+var a = function(){
+    prompt("Enter you Name: ");
+};
+
+console.log(a);
+//<-------------------------------------------------------------------------->
+
+// Pure Function :  A function that doesn't change the value of any globe variable
+function add(m,n){
+    return m+n;
+}
+
+console.log(add(5,6));
+
+// Impure Function: A function that changes the value of any global variable.
+let total = 0;
+function addToTotal(a){
+    total +=a;
+}
+addToTotal(5);
+console.log(total);
+
+// Scope 
+var a = 12; // Global Scope
+
+function b() //
+{
+    var b = 12; // Local Scope
+}
+
+// Closure -> Just see it for now
+/* 
+
+    A Closure is a concept in a function "returns" a another function and returned function has used the data of parent function. 
+
+*/
+function abcd(){
+    var z = 15; // data of parent function
+    return function(){
+        console.log(z);
+    }
+}
+
+var ans = abcd();
+console.log(ans);
+
+
+//<-------------------------------------------------------------------------->
+
 // NOT NECCESARY TO UNDERSTAND IT RIGHT NOW
 (function nec(){
     
