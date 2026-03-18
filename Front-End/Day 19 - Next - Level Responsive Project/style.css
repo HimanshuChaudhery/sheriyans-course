@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+main {
+  width: 100%;
+  padding: 1.5rem;
+  padding-top: 4rem;
+}
+main .hero-text {
+  width: 100%;
+  background-color: antiquewhite;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+main .hero-text img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .hero-text .text {
+  display: flex;
+  justify-content: space-between;
+  font-family: monospace;
+}
+main .hero-text .text p {
+  text-transform: uppercase;
+}/*# sourceMappingURL=style.css.map */
