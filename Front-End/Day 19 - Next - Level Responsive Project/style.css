@@ -89,7 +89,6 @@ main .image-text .bottom .services .service p {
   font-weight: 400;
   text-transform: uppercase;
 }
-
 @media (min-width: 900px) {
   main {
     padding: 3rem;
@@ -108,5 +107,8 @@ main .image-text .bottom .services .service p {
   }
   main .image-text .bottom h1 {
     font-size: 6em;
+  }
+  main .image-text .bottom .services {
+    padding-top: 3rem;
   }
 }/*# sourceMappingURL=style.css.map */

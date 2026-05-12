@@ -116,6 +116,10 @@ main{
 
     }
 
+    .verticle-text{
+        
+    }
+
 }
 
 // Now we make this website responsive for Desktop too
@@ -146,6 +150,11 @@ main{
 
                 h1{
                    font-size: 6em; 
+                }
+
+                .services{
+                    // background-color: red;
+                    padding-top: 3rem;
                 }
                 
             }
