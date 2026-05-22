@@ -89,14 +89,57 @@ main .image-text .bottom .services .service p {
   font-weight: 400;
   text-transform: uppercase;
 }
+main .vertical-text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  background-color: aqua;
+}
+main .vertical-text .top {
+  width: 100%;
+  aspect-ratio: 1/1;
+}
+main .vertical-text .top img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .vertical-text .bottom {
+  display: flex;
+  gap: 1em;
+}
+main .vertical-text .bottom p {
+  writing-mode: vertical-rl;
+  padding: 0.8em;
+  font-weight: 600;
+}
+main .vertical-text .bottom .text p {
+  writing-mode: initial;
+}
+main .vertical-text .bottom .text h1 {
+  font-size: 4em;
+  font-weight: 500;
+  line-height: 1em;
+}
+main .vertical-text .bottom .text p {
+  line-height: 1.5;
+  font-family: monospace;
+  font-size: 1.5em;
+  opacity: 0.5;
+}
+
 @media (min-width: 900px) {
   main {
     padding: 3rem;
     gap: 3rem;
   }
   main .image-text {
+    display: flex;
     flex-direction: row-reverse;
     gap: 2em;
+    background-color: red;
     justify-content: space-between;
   }
   main .image-text .top img {
@@ -110,5 +153,21 @@ main .image-text .bottom .services .service p {
   }
   main .image-text .bottom .services {
     padding-top: 3rem;
+  }
+  main .vertical-text {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+  }
+  main .vertical-text .top {
+    width: 25%;
+  }
+  main .vertical-text .bottom {
+    width: 75%;
+    flex-direction: row-reverse;
+  }
+  main .vertical-text .bottom .text h1 {
+    font-size: 4em;
   }
 }/*# sourceMappingURL=style.css.map */

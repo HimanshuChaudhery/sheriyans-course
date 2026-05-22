@@ -116,8 +116,56 @@ main{
 
     }
 
-    .verticle-text{
-        
+    .vertical-text{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+
+
+        background-color: aqua;
+
+        .top{
+            width:100%;
+            aspect-ratio: 1/1;
+            img{
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .bottom{
+            display: flex;
+            gap: 1em;
+            
+            p{
+                // The writing-mode CSS property sets whether lines of text are laid out horizontally or vertically, as well as the direction in which blocks progress.
+                writing-mode: vertical-rl;
+                padding: 0.8em;
+                font-weight: 600;
+            }
+
+            .text{
+                p{
+                    writing-mode: initial;
+                }
+
+                h1{
+                    font-size: 4em;
+                    font-weight: 500;
+                    line-height: 1em;
+                }
+
+                p{
+                    line-height: 1.5;
+                    font-family: monospace;
+                    font-size: 1.5em;
+                    opacity: 0.5;
+                    // text-align: justify;
+                }
+            }
+        }
     }
 
 }
@@ -131,9 +179,10 @@ main{
         gap: 3rem;
 
         .image-text{
+            display: flex;
             flex-direction: row-reverse;
             gap: 2em;
-            // background-color: red;
+            background-color: red;
             justify-content: space-between;
 
             .top{
@@ -157,6 +206,32 @@ main{
                     padding-top: 3rem;
                 }
                 
+            }
+        }
+
+        .vertical-text{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            gap: 1em;
+
+            .top{
+                width: 25%;
+                img{
+                    
+                }
+            }
+
+            .bottom{
+                width: 75%;
+                flex-direction: row-reverse;
+
+                .text{
+                    h1{
+                        font-size: 4em;
+                    }
+                }
+
             }
         }
 
