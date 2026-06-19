@@ -54,6 +54,7 @@ var h = ["a",12,function(){}, {}, {}, NaN, undefined];
 // Is array can have negetive index ?
 
 // ============================================================================
+// ============================================================================
 
 // OBJECTS
 var obj = {};
@@ -75,6 +76,27 @@ var obj1 = {
 console.log(obj1.name);
 console.log(obj1.age);
 
-// 45:00
+// WHY object ?
+// Ans: When we want to store multiple values/info about "single element/single entity".
+
+// Real life example: For storing all the names we use ARRAY but storing info about a particular person or organization then we use object.
+
+// Array example
+var names = ["harsh1","harsh2","harsh3"];
+
+// Object example
+var organization = {
+    name: "Demanic",
+    teamsize: 36,
+    startingyear: 2017
+};
+
+// How to create an object
+// Ans: There are two ways to create an object
+var obj2 = {};
+var obj3 = new Object();
+
+// How to access an object
+console.log(organization.name);
 
 // NOT EVERYDAY YOU ARE MOTIVATED TO WORK. BUT YOU SHOULD BE DOING IT. YOU SHOULD BE! 
