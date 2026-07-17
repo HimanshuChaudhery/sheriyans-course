@@ -27,7 +27,12 @@ console.log(typeof a4);
 // Now what happened they accidentally give Object a datatag 000 and they give the same tag to null.
 // So, whenever someone goes for typeof on null it will give datatype as object.
 
+// How to answer 
+// To be very honest null should not be belongs to object types it's a weird behaviour for object.
+
 // Ques 4
+
+// Using temp variable
 var b1 = 10;
 var b2 = 12;
 var temp = 0;
@@ -38,8 +43,42 @@ b2 = temp;
 
 console.log(b1 +" "+ b2);
 
+// Not uisng any Temp variable (Just in Javascript)
+var c1 = 15;
+var c2 = 16;
+
+[c1,c2] = [c2,c1];
+
+console.log(c1, c2);
+
+// Lets see one more way to do that
+var a = 12;
+var b = 13;
+
+a = a + b; // 12 + 13 = 25
+b = a - b; // 25 - 13 = 12
+a = a - b; // 25 - 12 = 13
+
+console.log(a, b);
+
+
 // Ques 5
+// Console.group() is used when we want to group console logs into a section/group.
 
-22:77
+console.group("Programming Languages");
+console.log("C++");
+console.log("Java");
+console.log("Javascript");
+console.log("Python");
+console.groupEnd();
 
-EARPHONES LOST SHITT MANNNNN
+// Lets see another example
+// Now this time we can see we are using groupCollapsed()
+console.groupCollapsed("Data Structure");
+console.log("Array");
+console.log("Stack");
+console.log("Queue");
+console.log("LinkedList");
+console.groupEnd();
+
+47:08
